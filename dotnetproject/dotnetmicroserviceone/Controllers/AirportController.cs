@@ -4,7 +4,7 @@ namespace dotnetmicroserviceone.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class WeatherForecastController : ControllerBase
+public class AirportController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
     {
@@ -13,7 +13,7 @@ public class WeatherForecastController : ControllerBase
 
     private readonly ILogger<WeatherForecastController> _logger;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public AirportController(ILogger<WeatherForecastController> logger)
     {
         _logger = logger;
     }
